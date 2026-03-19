@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alatau Smart Accessibility MVP</title>
+    <title>Alatau Smart: Доступный город</title>
     <meta
       name="description"
-      content="A working demo for accessible navigation, place discovery, hazard reporting, and emergency support in Alatau Smart City."
+      content="Демо доступной навигации, поиска мест, сообщений о препятствиях и экстренной поддержки в Alatau Smart City."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1090,7 +1090,7 @@ textarea {
 
   </style>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
     <div class="background-blur background-blur-left"></div>
     <div class="background-blur background-blur-right"></div>
 
@@ -1109,81 +1109,81 @@ textarea {
           </svg>
         </span>
         <span>
-          <strong>Alatau Smart</strong>
-          <small>Accessible City Demo</small>
+            <strong>Alatau Smart</strong>
+            <small>Демо доступного города</small>
         </span>
       </a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="#home">Home</a>
-        <a href="#profile">Profile</a>
-        <a href="#map">Map</a>
-        <a href="#place">Place Card</a>
-        <a href="#support">Support</a>
-        <a href="#assistant">Assistant</a>
-        <a href="#admin">Admin</a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#home">Главная</a>
+        <a href="#profile">Профиль</a>
+        <a href="#map">Карта</a>
+        <a href="#place">Место</a>
+        <a href="#support">Помощь</a>
+        <a href="#assistant">Ассистент</a>
+        <a href="#admin">Админ</a>
       </nav>
       <div class="topbar-actions">
-        <span class="mini-pill" id="current-user-pill">Guest</span>
-        <button class="ghost-button" id="logout-button" type="button">Logout</button>
+        <span class="mini-pill" id="current-user-pill">Гость</span>
+        <button class="ghost-button" id="logout-button" type="button">Выйти</button>
         <button
           class="emergency-toggle"
           id="emergency-toggle"
           type="button"
           aria-pressed="false"
         >
-          Earthquake Safe Mode
+          Экстренный режим
         </button>
       </div>
     </header>
 
     <div class="auth-overlay is-open" id="auth-overlay">
       <div class="auth-card">
-        <p class="eyebrow">Welcome</p>
-        <h2>Register or sign in</h2>
+        <p class="eyebrow">Добро пожаловать</p>
+        <h2>Регистрация и вход</h2>
         <p class="helper-text">
-          Enter your details once, save your support profile, and the assistant will use it in recommendations.
+          Заполните данные один раз, сохраните свой профиль доступности, и ассистент будет использовать его в рекомендациях.
         </p>
         <form class="db-form" id="auth-form">
           <div class="db-form-grid">
             <div>
-              <label for="auth-name">Name</label>
-              <input id="auth-name" name="auth-name" type="text" placeholder="Your name" />
+              <label for="auth-name">Имя</label>
+              <input id="auth-name" name="auth-name" type="text" placeholder="Ваше имя" />
             </div>
             <div>
-              <label for="auth-email">Email</label>
+              <label for="auth-email">Эл. почта</label>
               <input id="auth-email" name="auth-email" type="email" placeholder="name@example.com" />
             </div>
           </div>
 
           <div>
-            <label for="auth-password">Password</label>
-            <input id="auth-password" name="auth-password" type="password" placeholder="Create a password" />
+              <label for="auth-password">Пароль</label>
+            <input id="auth-password" name="auth-password" type="password" placeholder="Придумайте пароль" />
           </div>
 
           <div>
-            <label for="auth-about">Tell us about yourself</label>
+            <label for="auth-about">Расскажите о себе</label>
             <textarea
               id="auth-about"
               name="auth-about"
               rows="3"
-              placeholder="Example: I use a wheelchair, prefer quieter routes, and need elevators."
+              placeholder="Например: я передвигаюсь на коляске, предпочитаю спокойные маршруты и мне нужны лифты."
             ></textarea>
           </div>
 
           <div>
-            <span class="mini-label">Needs to save</span>
+            <span class="mini-label">Сохранить потребности</span>
             <div class="checkbox-grid">
-              <label><input type="checkbox" name="auth-tag" value="mobility-support" checked /> Mobility</label>
-              <label><input type="checkbox" name="auth-tag" value="blind-support" /> Blind / low vision</label>
-              <label><input type="checkbox" name="auth-tag" value="deaf-support" /> Deaf / hearing</label>
-              <label><input type="checkbox" name="auth-tag" value="sensory-friendly" /> Sensory-friendly</label>
+              <label><input type="checkbox" name="auth-tag" value="mobility-support" checked /> Мобильность</label>
+              <label><input type="checkbox" name="auth-tag" value="blind-support" /> Незрячий / слабовидящий</label>
+              <label><input type="checkbox" name="auth-tag" value="deaf-support" /> Глухой / слабослышащий</label>
+              <label><input type="checkbox" name="auth-tag" value="sensory-friendly" /> Сенсорно комфортно</label>
             </div>
           </div>
 
           <div class="button-row">
-            <button class="ghost-button" id="confirm-auth-button" type="button">Confirm and enter</button>
-            <button class="primary-button" type="submit">Enter app</button>
-            <button class="ghost-button" id="demo-user-button" type="button">Use saved account</button>
+            <button class="ghost-button" id="confirm-auth-button" type="button">Подтвердить и войти</button>
+            <button class="primary-button" type="submit">Войти в приложение</button>
+            <button class="ghost-button" id="demo-user-button" type="button">Войти в сохранённый аккаунт</button>
           </div>
           <p class="field-note" id="auth-status" role="status" aria-live="polite"></p>
         </form>
@@ -1193,21 +1193,21 @@ textarea {
     <main id="main-content">
       <section class="hero page-section" id="home">
         <div class="hero-copy">
-          <p class="eyebrow">Alatau Smart City MVP</p>
-          <h1>Accessibility that adapts to real people, real places, and real city risk.</h1>
+          <p class="eyebrow">MVP Alatau Smart City</p>
+          <h1>Доступность, которая подстраивается под реальных людей, реальные места и реальные городские риски.</h1>
           <p class="hero-text">
-            This website is a working demo of the Alatau accessibility ecosystem. Users can set
-            their needs, search in natural language, inspect structured place details, report
-            hazards, and switch into emergency guidance for seismic risk.
+            Этот сайт — рабочее демо экосистемы доступности Alatau. Пользователь может указать свои
+            потребности, искать места обычным языком, смотреть подробную информацию, сообщать
+            о препятствиях и включать экстренный режим.
           </p>
 
           <div class="hero-actions">
-            <button class="primary-button" id="start-demo" type="button">Start 3-minute demo</button>
-            <a class="ghost-button" href="#profile">Create accessibility profile</a>
+            <button class="primary-button" id="start-demo" type="button">Запустить демо</button>
+            <a class="ghost-button" href="#profile">Создать профиль доступности</a>
           </div>
 
           <form class="search-panel" id="search-form">
-            <label class="search-label" for="search-input">Natural-language search</label>
+            <label class="search-label" for="search-input">Поиск обычным языком</label>
             <div class="search-row">
               <input
                 id="search-input"
@@ -1216,31 +1216,31 @@ textarea {
                 value="quiet cafe with step-free entrance"
                 aria-describedby="search-helper"
               />
-              <button class="primary-button" type="submit">Search</button>
+              <button class="primary-button" type="submit">Найти</button>
             </div>
             <p class="helper-text" id="search-helper">
-              Try: "quiet cafe with step-free entrance", "blind-friendly library", or "deaf support center"
+              Например: "тихое кафе без ступенек", "библиотека для незрячих" или "центр помощи для глухих"
             </p>
           </form>
         </div>
 
         <aside class="hero-panel">
           <div class="metric-card">
-            <span class="metric-label">Supported user types</span>
-            <strong>12 groups</strong>
-            <p>From wheelchair users and low-vision users to venue owners, volunteers, and admins.</p>
+            <span class="metric-label">Поддерживаемые группы</span>
+            <strong>12 групп</strong>
+            <p>От людей на колясках и слабовидящих пользователей до волонтёров, владельцев мест и админов.</p>
           </div>
           <div class="metric-card">
-            <span class="metric-label">Demo focus</span>
-            <strong>One realistic journey</strong>
-            <p>Profile setup, search, place card, last-20-meters guidance, hazard alert, support.</p>
+            <span class="metric-label">Фокус демо</span>
+            <strong>Один реальный сценарий</strong>
+            <p>Профиль, поиск, карточка места, последние 20 метров пути, предупреждения и помощь.</p>
           </div>
           <div class="metric-card alert-card" id="smog-alert-card">
-            <span class="metric-label">Alatau-specific layer</span>
-            <strong>Smog-aware routing active</strong>
+            <span class="metric-label">Слой Alatau</span>
+            <strong>Маршруты с учётом смога активны</strong>
             <p>
-              Air quality is elevated today. The default route favors indoor transit passages and
-              lower traffic streets for sensitive users.
+              Сегодня качество воздуха ухудшено. По умолчанию маршрут выбирает более спокойные
+              переходы и менее загруженные улицы.
             </p>
           </div>
         </aside>
@@ -1248,32 +1248,32 @@ textarea {
 
       <section class="page-section" id="profile">
         <div class="section-heading">
-          <p class="eyebrow">Profile Setup</p>
-          <h2>Personalized accessibility profile</h2>
+          <p class="eyebrow">Настройка профиля</p>
+          <h2>Персональный профиль доступности</h2>
           <p>
-            Accessibility means different things to different people. Select the barriers that
-            matter and the system will adapt search ranking, place recommendations, and routing.
+            Доступность для каждого разная. Выберите важные для вас ограничения, и система
+            подстроит поиск, рекомендации мест и маршруты.
           </p>
         </div>
 
         <div class="profile-layout">
           <div class="card">
-            <h3>Choose your needs</h3>
+            <h3>Выберите свои потребности</h3>
             <div class="tag-grid" id="profile-tags" aria-live="polite"></div>
-            <button class="primary-button" id="save-profile" type="button">Save preferences</button>
+            <button class="primary-button" id="save-profile" type="button">Сохранить настройки</button>
             <p class="status-message" id="save-status" role="status" aria-live="polite"></p>
           </div>
 
           <div class="card summary-card">
-            <h3>Current profile summary</h3>
+            <h3>Текущий профиль</h3>
             <ul class="summary-list" id="profile-summary"></ul>
             <div class="info-stack">
               <div>
-                <span class="mini-label">Search behavior</span>
+                <span class="mini-label">Поведение поиска</span>
                 <p id="search-behavior-copy"></p>
               </div>
               <div>
-                <span class="mini-label">Route behavior</span>
+                <span class="mini-label">Поведение маршрута</span>
                 <p id="route-behavior-copy"></p>
               </div>
             </div>
@@ -1283,11 +1283,11 @@ textarea {
 
       <section class="page-section" id="map">
         <div class="section-heading">
-          <p class="eyebrow">Map And Navigation</p>
-          <h2>Accessible places, hazards, and final approach guidance</h2>
+          <p class="eyebrow">Карта и навигация</p>
+          <h2>Доступные места, препятствия и подсказки на последнем участке пути</h2>
           <p>
-            This MVP uses a bounded demo neighborhood with structured place data, temporary hazard
-            alerts, and a last-20-meters view focused on the final entrance experience.
+            В этом MVP используется демонстрационный район с данными о местах, временными
+            сообщениями о препятствиях и подсказками на последних 20 метрах до входа.
           </p>
         </div>
 
@@ -1295,22 +1295,22 @@ textarea {
           <div class="card">
             <div class="toolbar">
               <div>
-                <span class="mini-label">Parsed filters</span>
-                <p id="active-filters">No active search yet.</p>
+                <span class="mini-label">Распознанные фильтры</span>
+                <p id="active-filters">Поиск пока не задан.</p>
               </div>
-              <button class="ghost-button" id="replay-demo" type="button">Replay demo flow</button>
+              <button class="ghost-button" id="replay-demo" type="button">Повторить демо</button>
             </div>
 
             <div class="map-filter-row" id="map-filter-row" aria-label="Map audience filters"></div>
             <p class="status-message" id="map-summary-status"></p>
             <p class="status-message" id="interaction-status" role="status" aria-live="polite"></p>
             <div class="button-row live-map-toolbar">
-              <button class="ghost-button" id="locate-me" type="button">Find my location</button>
-              <button class="ghost-button" id="nearest-place" type="button">Nearest accessible place</button>
-              <button class="ghost-button" id="build-route" type="button">Build route</button>
-              <button class="ghost-button" id="clear-route" type="button">Clear route</button>
-              <button class="ghost-button" id="reload-db" type="button">Reload database</button>
-              <button class="ghost-button" id="export-db" type="button">Export data</button>
+              <button class="ghost-button" id="locate-me" type="button">Найти меня</button>
+              <button class="ghost-button" id="nearest-place" type="button">Ближайшее доступное место</button>
+              <button class="ghost-button" id="build-route" type="button">Построить маршрут</button>
+              <button class="ghost-button" id="clear-route" type="button">Очистить маршрут</button>
+              <button class="ghost-button" id="reload-db" type="button">Обновить базу</button>
+              <button class="ghost-button" id="export-db" type="button">Экспорт данных</button>
             </div>
             <p class="field-note map-note" id="db-status" role="status" aria-live="polite"></p>
 
@@ -1319,19 +1319,19 @@ textarea {
               <aside class="map-inspector" id="map-inspector" aria-live="polite"></aside>
             </div>
             <div class="route-summary" id="route-summary" aria-live="polite">
-              <strong>Route is not built yet</strong>
-              <span>Select a place and tap Build route. If location is allowed, the app will show time and distance.</span>
+              <strong>Маршрут ещё не построен</strong>
+              <span>Выберите место и нажмите «Построить маршрут». Если доступна геолокация, приложение покажет время и расстояние.</span>
             </div>
 
             <div class="legend">
-              <span><i class="legend-dot place-dot"></i> Accessible places</span>
-              <span><i class="legend-dot hazard-dot"></i> Hazard reports</span>
-              <span><i class="legend-dot safe-dot"></i> Safe zones</span>
+              <span><i class="legend-dot place-dot"></i> Доступные места</span>
+              <span><i class="legend-dot hazard-dot"></i> Сообщения о препятствиях</span>
+              <span><i class="legend-dot safe-dot"></i> Безопасные зоны</span>
             </div>
           </div>
 
           <div class="card">
-            <h3>Ranked results</h3>
+            <h3>Отсортированные результаты</h3>
             <div class="results-list" id="results-list"></div>
             <p class="status-message" id="results-status" role="status" aria-live="polite"></p>
           </div>
@@ -1340,11 +1340,11 @@ textarea {
 
       <section class="page-section" id="place">
         <div class="section-heading">
-          <p class="eyebrow">Place Card</p>
-          <h2>Structured accessibility details, not a single score</h2>
+          <p class="eyebrow">Карточка места</p>
+          <h2>Подробные данные о доступности, а не одна общая оценка</h2>
           <p>
-            Every place card shows granular access information, trust labels, destination guidance,
-            and venue updates so users can make real decisions.
+            Каждая карточка показывает подробную информацию о доступности, метки доверия,
+            подсказки по маршруту и обновления по месту.
           </p>
         </div>
 
@@ -1352,24 +1352,24 @@ textarea {
           <article class="card place-card" id="place-card"></article>
 
           <aside class="card">
-            <h3>Report a temporary barrier</h3>
+            <h3>Сообщить о временном препятствии</h3>
             <form id="hazard-form" class="report-form">
-              <label for="hazard-title">Issue</label>
-              <input id="hazard-title" name="title" type="text" placeholder="Example: scooter blocking ramp" />
-              <label for="hazard-detail">Details</label>
+              <label for="hazard-title">Проблема</label>
+              <input id="hazard-title" name="title" type="text" placeholder="Например: самокат перекрыл пандус" />
+              <label for="hazard-detail">Подробности</label>
               <textarea
                 id="hazard-detail"
                 name="detail"
                 rows="4"
-                placeholder="Describe the hazard and where it appears."
+                placeholder="Опишите препятствие и где оно находится."
               ></textarea>
-              <button class="primary-button" type="submit">Publish hazard report</button>
+              <button class="primary-button" type="submit">Опубликовать сообщение</button>
               <p class="field-note" id="hazard-form-status" role="status" aria-live="polite"></p>
             </form>
 
             <div class="report-feed">
               <div class="feed-header">
-                <h4>Live hazard feed</h4>
+                <h4>Лента препятствий</h4>
                 <span id="hazard-count"></span>
               </div>
               <div id="hazard-feed"></div>
@@ -1380,37 +1380,37 @@ textarea {
 
       <section class="page-section" id="support">
         <div class="section-heading">
-          <p class="eyebrow">Support And Emergency</p>
-          <h2>Volunteer help, escalation, and earthquake-safe mode</h2>
+          <p class="eyebrow">Помощь и экстренный режим</p>
+          <h2>Помощь волонтёров, эскалация и безопасный режим при землетрясении</h2>
           <p>
-            The support layer is intentionally simple for the MVP: quick volunteer connection,
-            emergency escalation, safe-zone guidance, and high-contrast emergency presentation.
+            Блок помощи сделан простым для MVP: быстрый контакт с волонтёром,
+            экстренная эскалация, подсказки по безопасной зоне и высококонтрастный режим.
           </p>
         </div>
 
         <div class="support-layout">
           <div class="card support-card">
-            <h3>Need help now?</h3>
+            <h3>Нужна помощь сейчас?</h3>
             <p id="support-copy">
               Request a volunteer escort, switch to text-first help, or trigger emergency mode for a
               simplified interface and safe-zone guidance.
             </p>
             <div class="hero-actions">
               <a class="primary-button" href="https://wa.me/?text=I%20need%20accessibility%20support%20near%20Cafe%20Orbit" target="_blank" rel="noreferrer">
-                Contact volunteer
+                Связаться с волонтёром
               </a>
-              <button class="ghost-button" id="escalate-button" type="button">Emergency escalation</button>
+              <button class="ghost-button" id="escalate-button" type="button">Экстренная эскалация</button>
             </div>
           </div>
 
           <div class="card support-card">
-            <h3>Emergency state</h3>
+            <h3>Состояние экстренного режима</h3>
             <div class="emergency-status" id="emergency-status">
-              <span class="status-pill">Normal</span>
-              <p>Safe zones and alerts are visible, but the interface stays in standard browsing mode.</p>
+              <span class="status-pill">Обычный</span>
+              <p>Безопасные зоны и предупреждения видны, но интерфейс работает в обычном режиме.</p>
             </div>
             <div class="safe-zone-box">
-              <span class="mini-label">Nearest safe zone</span>
+              <span class="mini-label">Ближайшая безопасная зона</span>
               <strong id="safe-zone-name">Transit Hub Safe Zone</strong>
               <p id="safe-zone-copy">
                 Step-free entry from the east side, tactile floor line from plaza crossing, volunteer
@@ -1423,103 +1423,103 @@ textarea {
 
       <section class="page-section" id="admin">
         <div class="section-heading">
-          <p class="eyebrow">Admin Snapshot</p>
-          <h2>Moderation and trust management</h2>
+          <p class="eyebrow">Панель администратора</p>
+          <h2>Модерация и управление доверием</h2>
           <p>
-            For the hackathon, this page is a demo of venue claim review, hazard moderation, and
-            trust-label governance instead of a full multi-role dashboard.
+            Для хакатона эта страница показывает демо проверки мест, модерации препятствий
+            и управления метками доверия вместо полноценной админ-панели.
           </p>
         </div>
 
         <div class="admin-grid">
           <div class="card admin-card">
-            <h3>Pending venue claim</h3>
-            <p><strong>Orbit Cafe</strong> requests ownership of its place card.</p>
+            <h3>Ожидающая заявка на место</h3>
+            <p><strong>Orbit Cafe</strong> запрашивает подтверждение владения карточкой места.</p>
             <ul class="summary-list">
-              <li>Uploaded entrance photo and elevator note</li>
-              <li>Updated accessible restroom availability</li>
-              <li>Marked service desk counter height</li>
+              <li>Загружено фото входа и информация о лифте</li>
+              <li>Обновлена доступность туалета</li>
+              <li>Указана высота стойки обслуживания</li>
             </ul>
             <div class="button-row">
-              <button class="primary-button" id="approve-claim-button" type="button">Approve claim</button>
-              <button class="ghost-button" id="request-proof-button" type="button">Request proof</button>
+              <button class="primary-button" id="approve-claim-button" type="button">Подтвердить заявку</button>
+              <button class="ghost-button" id="request-proof-button" type="button">Запросить доказательства</button>
             </div>
             <p class="field-note" id="admin-status" role="status" aria-live="polite"></p>
           </div>
 
           <div class="card admin-card">
-            <h3>Trust label review</h3>
+            <h3>Проверка меток доверия</h3>
             <div class="trust-stack">
-              <span class="trust-label trust-venue">Verified by venue</span>
-              <span class="trust-label trust-community">Verified by community</span>
-              <span class="trust-label trust-recent">Recently updated</span>
-              <span class="trust-label trust-outdated">Outdated</span>
+              <span class="trust-label trust-venue">Подтверждено местом</span>
+              <span class="trust-label trust-community">Подтверждено сообществом</span>
+              <span class="trust-label trust-recent">Недавно обновлено</span>
+              <span class="trust-label trust-outdated">Устарело</span>
             </div>
-            <p>Trust labels are surfaced directly on place cards so users know which facts are reliable.</p>
+            <p>Метки доверия показываются прямо в карточках мест, чтобы пользователь понимал, каким данным можно доверять.</p>
           </div>
 
           <div class="card admin-card">
-            <h3>Moderation queue</h3>
+            <h3>Очередь модерации</h3>
             <ul class="summary-list">
-              <li>2 hazard reports need confirmation</li>
-              <li>1 duplicate venue edit flagged by admin</li>
-              <li>0 emergency requests waiting</li>
+              <li>2 сообщения о препятствиях ждут подтверждения</li>
+              <li>1 дублирующее редактирование места отмечено админом</li>
+              <li>0 экстренных запросов в ожидании</li>
             </ul>
           </div>
 
           <div class="card admin-card">
-            <h3>Add place to database</h3>
+            <h3>Добавить место в базу</h3>
             <form class="db-form" id="place-form">
               <div class="db-form-grid">
                 <div>
-                  <label for="place-name">Place name</label>
-                  <input id="place-name" name="place-name" type="text" placeholder="Example: Inclusive pharmacy" />
+                  <label for="place-name">Название места</label>
+                  <input id="place-name" name="place-name" type="text" placeholder="Например: доступная аптека" />
                 </div>
                 <div>
-                  <label for="place-category">Category</label>
-                  <input id="place-category" name="place-category" type="text" placeholder="Clinic, service center, cafe" />
+                  <label for="place-category">Категория</label>
+                  <input id="place-category" name="place-category" type="text" placeholder="Клиника, центр услуг, кафе" />
                 </div>
               </div>
 
               <div>
-                <label for="place-address">Address / note</label>
-                <input id="place-address" name="place-address" type="text" placeholder="Alatau district, block or landmark" />
+                <label for="place-address">Адрес / примечание</label>
+                <input id="place-address" name="place-address" type="text" placeholder="Район Алатау, квартал или ориентир" />
               </div>
 
               <div class="db-form-grid">
                 <div>
-                  <label for="place-lat">Latitude</label>
+                  <label for="place-lat">Широта</label>
                   <input id="place-lat" name="place-lat" type="number" step="0.000001" placeholder="43.23" />
                 </div>
                 <div>
-                  <label for="place-lng">Longitude</label>
+                  <label for="place-lng">Долгота</label>
                   <input id="place-lng" name="place-lng" type="number" step="0.000001" placeholder="76.92" />
                 </div>
               </div>
 
               <div>
-                <span class="mini-label">Support profiles</span>
+                <span class="mini-label">Поддерживаемые профили</span>
                 <div class="checkbox-grid">
-                  <label><input type="checkbox" name="place-tag" value="mobility-support" checked /> Mobility</label>
-                  <label><input type="checkbox" name="place-tag" value="blind-support" /> Blind / low vision</label>
-                  <label><input type="checkbox" name="place-tag" value="deaf-support" /> Deaf / hearing</label>
-                  <label><input type="checkbox" name="place-tag" value="sensory-friendly" /> Sensory-friendly</label>
+                  <label><input type="checkbox" name="place-tag" value="mobility-support" checked /> Мобильность</label>
+                  <label><input type="checkbox" name="place-tag" value="blind-support" /> Незрячий / слабовидящий</label>
+                  <label><input type="checkbox" name="place-tag" value="deaf-support" /> Глухой / слабослышащий</label>
+                  <label><input type="checkbox" name="place-tag" value="sensory-friendly" /> Сенсорно комфортно</label>
                 </div>
               </div>
 
               <div>
-                <label for="place-features">Features</label>
+                <label for="place-features">Особенности</label>
                 <textarea
                   id="place-features"
                   name="place-features"
                   rows="3"
-                  placeholder="Example: ramp, accessible restroom, tactile guidance, sign-language support"
+                  placeholder="Например: пандус, доступный туалет, тактильная плитка, жестовая поддержка"
                 ></textarea>
               </div>
 
               <div class="button-row">
-                <button class="primary-button" type="submit">Save place</button>
-                <button class="ghost-button" id="capture-map-center" type="button">Use map center</button>
+                <button class="primary-button" type="submit">Сохранить место</button>
+                <button class="ghost-button" id="capture-map-center" type="button">Взять центр карты</button>
               </div>
               <p class="field-note" id="place-form-status" role="status" aria-live="polite"></p>
             </form>
@@ -1529,31 +1529,31 @@ textarea {
 
       <section class="page-section" id="assistant">
         <div class="section-heading">
-          <p class="eyebrow">Assistant</p>
-          <h2>Accessibility assistant for questions and guidance</h2>
+          <p class="eyebrow">Ассистент</p>
+          <h2>Ассистент по доступности для вопросов и подсказок</h2>
           <p>
-            Ask about routes, the safest place, nearby barriers, your profile, or what location is best for your needs.
+            Спрашивайте о маршрутах, безопасных местах, ближайших препятствиях, своём профиле и о том, какое место лучше подходит под ваши потребности.
           </p>
         </div>
 
         <div class="support-layout">
           <div class="card">
-            <h3>Chat assistant</h3>
+            <h3>Чат с ассистентом</h3>
             <div class="assistant-thread" id="assistant-thread"></div>
             <form class="report-form" id="assistant-form">
-              <label for="assistant-input">Question</label>
+              <label for="assistant-input">Вопрос</label>
               <input
                 id="assistant-input"
                 name="assistant-input"
                 type="text"
-                placeholder="Example: How do I get to the clinic and is there a ramp?"
+                placeholder="Например: как добраться до клиники и есть ли там пандус?"
               />
-              <button class="primary-button" type="submit">Ask assistant</button>
+              <button class="primary-button" type="submit">Спросить ассистента</button>
             </form>
           </div>
 
           <div class="card">
-            <h3>User profile snapshot</h3>
+            <h3>Краткий профиль пользователя</h3>
             <div class="user-profile-panel" id="user-profile-panel"></div>
           </div>
         </div>
@@ -1561,8 +1561,8 @@ textarea {
     </main>
 
     <footer class="footer">
-      <p>Built as a hackathon-ready web MVP for Alatau Smart City.</p>
-      <a href="README.md">Project notes</a>
+      <p>Сделано как веб-MVP для хакатона Alatau Smart City.</p>
+      <a href="README.md">Заметки проекта</a>
     </footer>
 
     <script
